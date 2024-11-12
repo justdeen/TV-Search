@@ -11,7 +11,7 @@ let error = 0
 main.addEventListener('click', async function(e) {
     // document.body.style.backgroundColor = "blue"
     e.preventDefault();
-    //form.style.backgroundColor = "brown"
+    form.style.backgroundColor = "brown"
     //let children = Array.from(grid.children)
     //children.forEach(elem => elem.remove())
     let searchTerm = field.value
