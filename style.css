@@ -116,3 +116,7 @@ section{
 .error{
     font-size: 20px;
 }
+
+#link{
+    color: blue
+}
