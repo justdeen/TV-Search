@@ -7,10 +7,10 @@ let res = 0
 let error = 0
 
 // Eventlistener for storing the response from the API call
-form.addEventListener('submit', async (e) => {
+form.addEventListener('click', async function(e) {
     // document.body.style.backgroundColor = "blue"
     e.preventDefault();
-    form.style.backgroundColor = "brown"
+    //form.style.backgroundColor = "brown"
     //let children = Array.from(grid.children)
     //children.forEach(elem => elem.remove())
     let searchTerm = field.value
@@ -98,6 +98,6 @@ function showdata(){
 //showdata()
 
 // If conditional for displaying 'clear results' button
-if(grid.innerHTML){
-    clear.style.display = 'block'
-}
+//if(grid.innerHTML){
+    //clear.style.display = 'block'
+//}
