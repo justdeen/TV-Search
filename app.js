@@ -9,7 +9,7 @@ let error = 0
 
 // Eventlistener for storing the response from the API call
 main.addEventListener('click', async function(e) {
-    // document.body.style.backgroundColor = "blue"
+    document.body.style.backgroundColor = "brown"
     e.preventDefault();
     form.style.backgroundColor = "brown"
     //let children = Array.from(grid.children)
