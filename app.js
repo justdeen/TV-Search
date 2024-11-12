@@ -10,7 +10,7 @@ let error = 0
 // Eventlistener for storing the response from the API call
 form.addEventListener('submit', async (e) => {
     e.preventDefault()
-    let children = Array.from(grid.children)
+    //let children = Array.from(grid.children)
     //children.forEach(elem => elem.remove())
     //let searchTerm = field.value
     //let conf = {params: {q: searchTerm}}
