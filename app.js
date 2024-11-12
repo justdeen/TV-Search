@@ -6,10 +6,9 @@ let clear = document.getElementById('clear')
 let res = 0
 let error = 0
 
-document.body.style.backgroundColor = "blue"
-
 // Eventlistener for storing the response from the API call
 form.addEventListener('submit', async (e) => {
+    document.body.style.backgroundColor = "blue"
     e.preventDefault();
     let children = Array.from(grid.children)
     children.forEach(elem => elem.remove())
@@ -101,3 +100,5 @@ showdata()
 if(grid.innerHTML){
     clear.style.display = 'block'
 }
+
+document.body.style.backgroundColor = "blue"
