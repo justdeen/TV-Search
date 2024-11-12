@@ -3,7 +3,7 @@ let form = document.querySelector('#search')
 let field = document.getElementById('input')
 let grid = document.getElementById('grid')
 let clear = document.getElementById('clear')
-let res 
+let res = 0
 let error = 0
 
 // Eventlistener for storing the response from the API call
@@ -11,6 +11,7 @@ form.addEventListener('submit', async (e) => {
     e.preventDefault();
     // let children = Array.from(grid.children)
     // children.forEach(elem => elem.remove())
+    document.body.style.backgroundColor = "blue"
     let searchTerm = field.value
     let config = {params: {q: searchTerm}}
     res = await axios.get(`http://api.tvmaze.com/search/shows`, config)
