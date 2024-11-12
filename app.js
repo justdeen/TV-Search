@@ -35,7 +35,8 @@ form.addEventListener('submit', async (e) => {
     //}
     //display(res.data)
     //savedata()
-//})
+
+})
 
 // Function for clearing the search results container 
 clear.addEventListener('click', () => {
@@ -82,7 +83,7 @@ let display = (data) => {
             }
         }
     }
-    savedata()
+    //savedata()
 }
 
 // Function for storing search results on users' device 
