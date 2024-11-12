@@ -11,10 +11,10 @@ let error = 0
 form.addEventListener('submit', async (e) => {
     e.preventDefault()
     let children = Array.from(grid.children)
-    children.forEach(elem => elem.remove())
-    let searchTerm = field.value
-    //let conf = {params: {q: searchTerm}}
-    //res = await axios.get(`http://api.tvmaze.com/search/shows?`, conf)
+    //children.forEach(elem => elem.remove())
+    //let searchTerm = field.value
+    let conf = {params: {q: searchTerm}}
+    res = await axios.get(`http://api.tvmaze.com/search/shows?`, conf)
     field.value = ''
     document.body.style.backgroundColor = "brown"
     
