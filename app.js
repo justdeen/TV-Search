@@ -32,7 +32,6 @@ form.addEventListener('submit', async (e) => {
         clear.style.display = 'block'
         savedata()
     }
-    console.log(res.data)
     display(res.data)
     savedata()
 })
@@ -100,5 +99,3 @@ showdata()
 if(grid.innerHTML){
     clear.style.display = 'block'
 }
-
-document.body.style.backgroundColor = "blue"
