@@ -118,5 +118,6 @@ section{
 }
 
 #link{
-    color: blue
+    color: blue !important;
+    text-decoration: none;
 }
