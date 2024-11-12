@@ -29,12 +29,12 @@ form.addEventListener('submit', async (e) => {
         //}, 4000)
         // error.innerText = '~ NO RESULTS ~'   
     }
-    //else if(res.data.length > 0){
-        //clear.style.display = 'block'
-        //savedata()
-    //}
-    //display(res.data)
-    //savedata()
+    else if(res.data.length > 0){
+        clear.style.display = 'block'
+        savedata()
+    }
+    display(res.data)
+    savedata()
 
 })
 
@@ -83,21 +83,21 @@ let display = (data) => {
             }
         }
     }
-    //savedata()
+    savedata()
 }
 
-// Function for storing search results on users' device 
-//function savedata(){
-    //localStorage.setItem('data', grid.innerHTML)
-//}
+//Function for storing search results on users' device 
+function savedata(){
+    localStorage.setItem('data', grid.innerHTML)
+}
 
 // Function for retrieving and displaying search results upon page reload
-//function showdata(){
-    //grid.innerHTML = localStorage.getItem('data')
-//}
-//showdata()
+function showdata(){
+    grid.innerHTML = localStorage.getItem('data')
+}
+showdata()
 
 // If conditional for displaying 'clear results' button
-//if(grid.innerHTML){
-    //clear.style.display = 'block'
-//}
+if(grid.innerHTML){
+    clear.style.display = 'block'
+}
