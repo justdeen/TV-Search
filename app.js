@@ -3,11 +3,12 @@ let form = document.querySelector('#search')
 let field = document.getElementById('input')
 let grid = document.getElementById('grid')
 let clear = document.getElementById('clear')
+let main = document.getElementById('main')
 let res = 0
 let error = 0
 
 // Eventlistener for storing the response from the API call
-form.addEventListener('click', async function(e) {
+main.addEventListener('click', async function(e) {
     // document.body.style.backgroundColor = "blue"
     e.preventDefault();
     //form.style.backgroundColor = "brown"
