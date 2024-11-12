@@ -10,7 +10,6 @@ let error = 0
 // Eventlistener for storing the response from the API call
 form.addEventListener('submit', async (e) => {
     e.preventDefault()
-    document.body.style.backgroundColor = "brown"
     form.style.backgroundColor = "brown"
     let children = Array.from(grid.children)
     children.forEach(elem => elem.remove())
@@ -18,6 +17,7 @@ form.addEventListener('submit', async (e) => {
     let config = {params: {q: searchTerm}}
     res = await axios.get(`http://api.tvmaze.com/search/shows?`, config)
     field.value = ''
+    document.body.style.backgroundColor = "brown"
     
     if(res.data.length === 0){
         clear.style.display = 'none'
