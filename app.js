@@ -10,6 +10,7 @@ let error = 0
 form.addEventListener('submit', async (e) => {
     // document.body.style.backgroundColor = "blue"
     e.preventDefault();
+    form.style.backgroundColor = "brown"
     let children = Array.from(grid.children)
     children.forEach(elem => elem.remove())
     let searchTerm = field.value
@@ -17,24 +18,24 @@ form.addEventListener('submit', async (e) => {
     res = await axios.get(`http://api.tvmaze.com/search/shows?`, config)
     field.value = ''
     
-    if(res.data.length === 0){
-        clear.style.display = 'none'
-        error = document.createElement('div')
-        error.className = "error"
-        error.innerText = '~ TV SHOW NOT FOUND ~'
-        grid.append(error) 
-        setTimeout(() => {
-            error.innerText = ''
-        }, 4000)
+    //if(res.data.length === 0){
+        //clear.style.display = 'none'
+        //error = document.createElement('div')
+        //error.className = "error"
+        //error.innerText = '~ TV SHOW NOT FOUND ~'
+        //grid.append(error) 
+        //setTimeout(() => {
+            //error.innerText = ''
+        //}, 4000)
         // error.innerText = '~ NO RESULTS ~'   
-    }
-    else if(res.data.length > 0){
-        clear.style.display = 'block'
-        savedata()
-    }
-    display(res.data)
-    savedata()
-})
+    //}
+    //else if(res.data.length > 0){
+        //clear.style.display = 'block'
+        //savedata()
+    //}
+    //display(res.data)
+    //savedata()
+//})
 
 // Function for clearing the search results container 
 clear.addEventListener('click', () => {
