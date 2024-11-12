@@ -11,11 +11,11 @@ form.addEventListener('submit', async (e) => {
     // document.body.style.backgroundColor = "blue"
     e.preventDefault();
     form.style.backgroundColor = "brown"
-    let children = Array.from(grid.children)
-    children.forEach(elem => elem.remove())
+    //let children = Array.from(grid.children)
+    //children.forEach(elem => elem.remove())
     let searchTerm = field.value
-    let config = {params: {q: searchTerm}}
-    res = await axios.get(`http://api.tvmaze.com/search/shows?`, config)
+    //let config = {params: {q: searchTerm}}
+    //res = await axios.get(`http://api.tvmaze.com/search/shows?`, config)
     field.value = ''
     
     //if(res.data.length === 0){
@@ -94,7 +94,7 @@ function savedata(){
 function showdata(){
     grid.innerHTML = localStorage.getItem('data')
 }
-showdata()
+//showdata()
 
 // If conditional for displaying 'clear results' button
 if(grid.innerHTML){
