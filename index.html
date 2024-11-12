@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Tv Show Search</title>
+</head>
+<body>
+    <h1>Tv Search</h1>
+
+    <!-- Form element -->
+    <form action="" id="search">
+        <input type="text" placeholder="Tv Show" id="input" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Welcome text -->
+    <div id="welcome">Welcome to "Tv Show Search". Search the title of your favorite Tv shows, and get instant results with images, ratings, 
+        and direct links to official streaming sites.
+        <br>
+        Powered by <a href="http://api.tvmaze.com/search/shows">Tvmaze</a>
+    </div>
+
+    <!-- Container for storing search results -->
+    <div class="post"><button id="clear">Clear Results</button></div>
+    <section>
+        <div id="grid"></div>
+    </section>
+    
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
