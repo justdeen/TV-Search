@@ -14,7 +14,7 @@ form.addEventListener('submit', async (e) => {
     children.forEach(elem => elem.remove())
     let searchTerm = field.value
     let config = {params: {q: searchTerm}}
-    res = await axios.get(`http://api.tvmaze.com/search/shows?`, config)
+    //res = await axios.get(`http://api.tvmaze.com/search/shows?`, config)
     field.value = ''
     document.body.style.backgroundColor = "brown"
     
