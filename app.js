@@ -18,21 +18,21 @@ form.addEventListener('submit', async (e) => {
     res = await axios.get(`http://api.tvmaze.com/search/shows?`, config)
     field.value = ''
     
-    if(res.data.length === 0){
-        clear.style.display = 'none'
-        error = document.createElement('div')
-        error.className = "error"
-        error.innerText = '~ TV SHOW NOT FOUND ~'
-        grid.append(error) 
+    //if(res.data.length === 0){
+        //clear.style.display = 'none'
+        //error = document.createElement('div')
+        //error.className = "error"
+        //error.innerText = '~ TV SHOW NOT FOUND ~'
+        //grid.append(error) 
         //setTimeout(() => {
             //error.innerText = ''
         //}, 4000)
         // error.innerText = '~ NO RESULTS ~'   
-    }
-    else if(res.data.length > 0){
-        clear.style.display = 'block'
+    //}
+    //else if(res.data.length > 0){
+        //clear.style.display = 'block'
         //savedata()
-    }
+    //}
     //display(res.data)
     //savedata()
 //})
