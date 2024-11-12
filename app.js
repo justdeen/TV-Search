@@ -10,7 +10,6 @@ let error = 0
 // Eventlistener for storing the response from the API call
 form.addEventListener('submit', async (e) => {
     e.preventDefault()
-    form.style.backgroundColor = "brown"
     let children = Array.from(grid.children)
     children.forEach(elem => elem.remove())
     let searchTerm = field.value
@@ -19,17 +18,17 @@ form.addEventListener('submit', async (e) => {
     field.value = ''
     document.body.style.backgroundColor = "brown"
     
-    if(res.data.length === 0){
-        clear.style.display = 'none'
-        error = document.createElement('div')
-        error.className = "error"
-        error.innerText = '~ TV SHOW NOT FOUND ~'
-        grid.append(error) 
+    //if(res.data.length === 0){
+        //clear.style.display = 'none'
+        //error = document.createElement('div')
+        //error.className = "error"
+        //error.innerText = '~ TV SHOW NOT FOUND ~'
+        //grid.append(error) 
         //setTimeout(() => {
             //error.innerText = ''
         //}, 4000)
         // error.innerText = '~ NO RESULTS ~'   
-    }
+    //}
     //else if(res.data.length > 0){
         //clear.style.display = 'block'
         //savedata()
