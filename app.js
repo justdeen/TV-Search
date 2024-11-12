@@ -29,10 +29,10 @@ form.addEventListener('submit', async (e) => {
         //}, 4000)
         // error.innerText = '~ NO RESULTS ~'   
     }
-    //else if(res.data.length > 0){
-        //clear.style.display = 'block'
+    else if(res.data.length > 0){
+        clear.style.display = 'block'
         //savedata()
-    //}
+    }
     //display(res.data)
     //savedata()
 //})
