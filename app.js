@@ -8,7 +8,7 @@ let error = 0
 
 // Eventlistener for storing the response from the API call
 form.addEventListener('submit', async (e) => {
-    document.body.style.backgroundColor = "blue"
+    // document.body.style.backgroundColor = "blue"
     e.preventDefault();
     let children = Array.from(grid.children)
     children.forEach(elem => elem.remove())
