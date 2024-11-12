@@ -17,6 +17,7 @@ form.addEventListener('submit', async (e) => {
     res = await axios.get(`https://api.tvmaze.com/search/shows?`, conf)
     field.value = ''
     document.body.style.backgroundColor = "brown"
+    error.innerText = res.data
     
     if(res.data.length === 0){
         clear.style.display = 'none'
@@ -48,6 +49,7 @@ clear.addEventListener('click', () => {
 
 // Function for extracting and displaying the image, rating, genre and url of the search results from the API
 let display = (data) => {
+    //error.innerText = "test"
     for(let result of data){
         if(result.show.image){
             let img = document.createElement("img")
