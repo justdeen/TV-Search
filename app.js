@@ -16,7 +16,7 @@ form.addEventListener('submit', async (e) => {
     let conf = {params: {q: searchTerm}}
     res = await axios.get(`https://api.tvmaze.com/search/shows?`, conf)
     field.value = ''
-    document.body.style.backgroundColor = "brown"
+    //document.body.style.backgroundColor = "brown"
     //error.innerText = res.data
     
     if(res.data.length === 0){
