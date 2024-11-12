@@ -8,13 +8,13 @@ let res = 0
 let error = 0
 
 // Eventlistener for storing the response from the API call
-main.addEventListener('click', async function(e) {
+form.addEventListener('submit', async (e) => {
+    e.preventDefault()
     document.body.style.backgroundColor = "brown"
-    e.preventDefault();
     form.style.backgroundColor = "brown"
     //let children = Array.from(grid.children)
     //children.forEach(elem => elem.remove())
-    let searchTerm = field.value
+    //let searchTerm = field.value
     //let config = {params: {q: searchTerm}}
     //res = await axios.get(`http://api.tvmaze.com/search/shows?`, config)
     field.value = ''
@@ -88,14 +88,14 @@ let display = (data) => {
 }
 
 // Function for storing search results on users' device 
-function savedata(){
-    localStorage.setItem('data', grid.innerHTML)
-}
+//function savedata(){
+    //localStorage.setItem('data', grid.innerHTML)
+//}
 
 // Function for retrieving and displaying search results upon page reload
-function showdata(){
-    grid.innerHTML = localStorage.getItem('data')
-}
+//function showdata(){
+    //grid.innerHTML = localStorage.getItem('data')
+//}
 //showdata()
 
 // If conditional for displaying 'clear results' button
