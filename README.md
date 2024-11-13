@@ -1,3 +1,5 @@
+![Notes_241113_092919_093](https://github.com/user-attachments/assets/8e64d46b-ac3e-4db2-afa2-83ea3b7def48)
+
 ## 💫 Overview
 
 TV Search Website is a web application that allows users to search for their favorite TV shows and retrieve instant results with images, ratings, and direct links to official streaming sites.
