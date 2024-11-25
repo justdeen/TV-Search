@@ -21,7 +21,7 @@ The application features a simple and intuitive interface:
 - Search button to initiate search
 - Results grid displaying TV show images, ratings, and streaming links
 - Clear Results button to remove previous search results
-- Welcome message with onscreen instructions
+- Welcome message with instructions
 
 ## 📦 Technologies Used
 
